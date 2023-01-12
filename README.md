@@ -1,4 +1,5 @@
-## FINAL PROJECT - presentation date: February 8th, 2023
+## FINAL PROJECT 
+presentation date: February 8th, 2023
 
 
 ##### U of T Data Analytics Boot Camp
@@ -14,18 +15,20 @@
 
 
 ## GROUP 5:
-### Josette Bitanga 
-### Crystina Dang
-### Henrietta Danso
-### Isobel Tsang
+Josette Bitanga 
+Crystina Dang
+Henrietta Danso
+Isobel Tsang
 
 
-
+## PROJECT DETAILS
 ### THEME: Human Behaviour
 ### TOPIC: TBD
 ### DATASET: TBD (link)
+#### DESCRIPTION: TBD 
 #### REASONING: TBD
-### DATASET DESCRIPTION: TBD 
+#### DATASET NOTES:
+Valuable insights:
 
 
 
@@ -69,8 +72,7 @@ Remember that each team member, regardless of their role, needs to submit all th
 
 
 
-#### DATASET NOTES:
-#### Valuable insights:
+
 
 #### MEETING DATES, README UPDATE AT START AND END:
 1. 
