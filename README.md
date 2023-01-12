@@ -1,12 +1,17 @@
-# U of T Data Analytics Boot Camp
 ## FINAL PROJECT - presentation date: February 8th, 2023
 
+
+##### U of T Data Analytics Boot Camp
 #### INSTRUCTOR: Hassan Ahmad
 #### ASSISTANT INSTRUCTOR: Ankush Malhotra
+
+
 
 #### DUE DATES:
 #### Segment 1: Wed, Jan 25th
 #### Segment 2: Wed, Feb 1st
+
+
 
 ## GROUP 5:
 ### Josette Bitanga 
@@ -14,11 +19,15 @@
 ### Henrietta Danso
 ### Isobel Tsang
 
+
+
 ### THEME: Human Behaviour
 ### TOPIC: TBD
 ### DATASET: TBD (link)
 #### REASONING: TBD
 ### DATASET DESCRIPTION: TBD 
+
+
 
 #### PROJECT STATUS: on track
 #### NEEDS:
@@ -30,6 +39,8 @@
 
 #### CHALLENGES:
 #### FUTURE WORK:
+
+
 
 
 
@@ -55,6 +66,8 @@ Presentation:
 
 IMPORTANT
 Remember that each team member, regardless of their role, needs to submit all the pieces of the deliverable for each segment.
+
+
 
 #### DATASET NOTES:
 #### Valuable insights:
