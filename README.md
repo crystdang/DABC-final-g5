@@ -21,7 +21,8 @@ Segment 2: Wed, Feb 1st
 
 ## PROJECT DETAILS
 ### THEME: Human Behaviour
-### TOPIC: TBD
+### TOPIC: Work Life Balance
+#### QUESTION: Which 'bucket' (Healthy Body, Healthy mind, Expertise, Connection, Meaning) have the greatest impact on Work Life Balance Score?
 ### DATASET: Lifestyle_and_wellbeing_data_Kaggle.csv [Dataset](Data/Lifestyle_and_wellbeing_data_Kaggle.csv)
 #### DESCRIPTION: 
 Provided from [Kaggle](https://www.kaggle.com/datasets/ydalat/lifestyle-and-wellbeing-data):
@@ -38,7 +39,7 @@ Meaning, evaluating your compassion, generosity and how much 'you are living the
 
 #### REASONING: TBD
 #### DATASET NOTES:
-Valuable insights:
+- bad data in daily_stress column found: "1/1/00", data types VARCHAR, needs to be changed to INT
 Potential classification buckets:
 - Work Life Balance Score:
 1. 0 (poor) = below 550
@@ -49,24 +50,22 @@ Potential classification buckets:
 
 #### PROJECT STATUS: on track
 #### NEEDS:
-- question to answer
-IT:
-1.      Does longer sleep mean you have less time to do things for passion?
-SLEEP_HOURS vs. TIME_FOR_PASSION
-2.      Does how many people you interact with during a typical day mean you have less completed weekly to-do lists?
-SOCIAL_NETWORK vs. TODO_COMPLETE
-3.      Does more lost vacation days mean less years ahead that your life vision is clear?
-LIVE_VISION vs. LOST_VACATION
-
 - null hypothesis
 - alternative hypothesis
+- ERD draft
+- mock up ML models
+- dashboard draft
+- Python data exploration
+- presentation
 
 #### CHALLENGES:
 - Work Life Balance Score needs to be scaled
 
 #### FUTURE WORK:
-
-
+Isobel: ERD draft
+Henrietta: dashboard mock up
+Josette: presentation outline and ReadMe clean up
+Crystina: ML model, data exploration
 
 
 
@@ -75,22 +74,12 @@ LIVE_VISION vs. LOST_VACATION
 Content (60 points)
 - A detailed README.md file (20 points)
 - At least four commits per team member (20 points)
-
 - A database that stores at least two tables (or collections) for the project (20 points)
-- database: 1/1
-- tables: 0/2
-- ERD: 0/1
-- draft database: 0/1
 
 Presentation:
 - The selected topic and the reasoning for that selection (20 points)
 - A description of the data (20 points)
 - The questions that the team plans to answer with the project (20 points)
-
-IMPORTANT
-Remember that each team member, regardless of their role, needs to submit all the pieces of the deliverable for each segment.
-
-
 
 
 
@@ -103,3 +92,5 @@ Tips from Ankush:
 - Create draft ERD
 - Show testing KPI
 - Consider pre-machining learning page for dashboard
+
+2. Jan 18: Main question selected, database created and shared, binning columns as group, divided deliverables
