@@ -39,7 +39,8 @@ Meaning, evaluating your compassion, generosity and how much 'you are living the
 
 #### REASONING: TBD
 #### DATASET NOTES:
-- bad data in daily_stress column found: "1/1/00", data types VARCHAR, needs to be changed to INT
+- bad data in daily_stress column found: "1/1/00", data type set to VARCHAR upon upload, needs to be changed to INT
+
 Potential classification buckets:
 - Work Life Balance Score:
 1. 0 (poor) = below 550
@@ -59,7 +60,7 @@ Potential classification buckets:
 - presentation
 
 #### CHALLENGES:
-- Work Life Balance Score needs to be scaled
+- No PRIMARY KEY, index to be created
 
 #### FUTURE WORK:
 Isobel: ERD draft
