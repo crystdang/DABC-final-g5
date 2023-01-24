@@ -1,0 +1,7 @@
+To include in Tableau Dashboard (Rough Copy #1):
+- Image 1: Total number of respondents to survey
+- Image 2: Pie chart: division of repondents by age group
+- Image 3: Scatter plot - portion of all respondents in the 3 different balance score ranges (0, 1, or 2)
+- Image 4: Line chart - avg of balance scores overtime
+- Image 5: Bar chart - for the members in each balance score: number of respondents for specific category in each buckets (perhaps to signify that people in the lower section  tend to vite more to
+- Image 6: Pie chart - grouped results of balance scores based on buckets (Healthy Body, Healthy mind, Expertise, Connection, Meaning)
