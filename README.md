@@ -22,7 +22,7 @@ Segment 2: Wed, Feb 1st
 ## PROJECT DETAILS
 ### THEME: Human Behaviour
 ### TOPIC: Work Life Balance
-#### QUESTION: Which 'bucket' (Healthy Body, Healthy mind, Expertise, Connection, Meaning) have the greatest impact on Work Life Balance Score?
+#### QUESTION: Which 'bucket' (Healthy Body, Healthy mind, Expertise, Connection, Meaning) has the greatest impact on Work Life Balance Score?
 ### DATASET: Lifestyle_and_wellbeing_data_Kaggle.csv [Dataset](Data/Lifestyle_and_wellbeing_data_Kaggle.csv)
 #### DESCRIPTION: 
 Provided from [Kaggle](https://www.kaggle.com/datasets/ydalat/lifestyle-and-wellbeing-data):
@@ -37,9 +37,14 @@ Expertise, measuring the ability to grow your expertise and achieve something un
 Connection, assessing the strength of your social network and your inclination to discover the world;
 Meaning, evaluating your compassion, generosity and how much 'you are living the life of your dream'.
 
-#### REASONING: TBD
+#### REASONING: We are interested in exploring the influence of the various social, mental, work, and spiritual factors on work/life balance. The dataset found provides insight on a vast range of these external factors. This could be a potentially valuable tool for a given company's Human Resources efforts, especially to help strengthen employee wellbeing, staff retention, and company culture as a whole.
+
 #### DATASET NOTES:
 - bad data in daily_stress column found: "1/1/00", data type set to VARCHAR upon upload, needs to be changed to INT
+- age column: most people who took the quiz were above 20 year old.
+- gender column to be dropped, there is an imbalance in this column
+- timestamp column: removed the time, converted from string to date. Will be used to visualize the data over time, but will not be used for the machine learning model.
+- Find the relationship between the different features and the work/life balance
 
 Potential classification buckets:
 - Work Life Balance Score:
@@ -48,14 +53,19 @@ Potential classification buckets:
 3. 2 (excellent) = above 700
 - Life vs. Work vs. Both identifiers 
 
+ML model mockup:
+- Custom encoding (using above classification buckets)
+- Decision trees
+
 
 #### PROJECT STATUS: on track
+
 #### NEEDS:
-- null hypothesis
+- null hypothesis: None of the buckets have a bigger influence on the 
 - alternative hypothesis
-- ERD draft
-- mock up ML models
-- dashboard draft
+- ERD draft-done
+- mock up ML models-in progress
+- dashboard draft-in progress
 - Python data exploration
 - presentation
 
@@ -95,3 +105,4 @@ Tips from Ankush:
 - Consider pre-machining learning page for dashboard
 
 2. Jan 18: Main question selected, database created and shared, binning columns as group, divided deliverables
+
