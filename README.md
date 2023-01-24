@@ -25,6 +25,9 @@ While working with the data, be sure to make regular commits. Each team member s
 Presentation:
 - The selected topic and the reasoning for that selection (20 points)
 - A description of the data (20 points)
+
+![wellbeing_and_lifestyle_ERD](https://user-images.githubusercontent.com/108503112/214191885-bef94737-4d67-4b9e-9450-b0c16c54fddd.png)
+
 - The questions that the team plans to answer with the project (20 points)
 
 During this early phase, focus on outlining and documenting your ideas, questions, and data. You don’t need to have a slide deck at this point. If the team feels more comfortable outlining this information in the README.md file, that’s perfectly acceptable. This kind of documentation and outline is critical not only for the final presentation but also to organize and align all the team members on the goals and deadlines of the project.
