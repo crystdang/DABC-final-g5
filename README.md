@@ -105,6 +105,10 @@ Content (60 points)
 Presentation:
 - The selected topic and the reasoning for that selection (20 points)
 - A description of the data (20 points)
+
+![wellbeing_lifestyle_erd](https://user-images.githubusercontent.com/108503112/214723873-f517e70c-5d71-469d-83a3-6670dcfbc621.png)
+
+
 - The questions that the team plans to answer with the project (20 points)
 
 
