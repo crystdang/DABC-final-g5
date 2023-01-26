@@ -1,8 +1,8 @@
 -- Create Table
 
-CREATE TABLE wellbeing_and_lifestyle (
+CREATE TABLE STG_WL (
  -- REMOVE
- Timestamp DATE,
+ Timestamp VARCHAR,
 -- Healthy Body
  FRUITS_VEGGIES INT,
 -- Healthy Mind
@@ -52,7 +52,7 @@ CREATE TABLE wellbeing_and_lifestyle (
 
 -- Create Table
 
-CREATE TABLE wl_clean (
+CREATE TABLE TRF_WL (
  DATE DATE,
  FRUITS_VEGGIES INT,
  DAILY_STRESS INT,
