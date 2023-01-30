@@ -8,9 +8,9 @@ presentation date: February 8th, 2023
 
 
 #### DUE DATES:
-Segment 1: Wed, Jan 25th
-Segment 2: Wed, Feb 1st
-Segment 3: Wed, Feb 8th
+Segment 1: Wed, Jan 25th\n
+Segment 2: Wed, Feb 1st\n
+Segment 3: Wed, Feb 8th\n
 
 
 ## GROUP 5:
