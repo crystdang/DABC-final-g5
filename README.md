@@ -50,7 +50,7 @@ We are interested in exploring the influence of the various social, mental, work
 - The gender column will be dropped as it is irrelevant to the output.
 - For the timestamp column, we removed the time and converted the date from string to date data type. This will be used to visualize the data over time, but will not be used for the machine learning model.
 - Visually investigating the potential relationships between the different features and the work/life balance score, Focus Time and Live_Vision seem to contribute the strongest. 
-- There were 15972 total respondents. Of the total, 3816 scored excellent (above 700) and 12155 scored 700 or below (for our purposes, will be categorized as "Needs improvement").
+- There were 15971 total respondents. Of the total, 3786 scored excellent (above 700) and 12185 scored 700 or below (for our purposes, will be categorized as "Needs improvement").
 - Data exploration was completed on Google Colaboratory using Pyspark, [ETL.ipynb](notebooks/ETL.ipynb), and data was uploaded to a database on AWS and Postgres.
 - The initial raw data inserted into a database on Postgres can be found in [staging_table.csv](data/staging_table.csv) called "STG_WL". The cleansed data can be found in [transformed_table.csv](data/transformed_table.csv) called "TRF_WL".
 - An [initial sketch of the dashboard](dashboard/Dashboard_MockUp_ROUGH.pptx) is available to be viewed.
@@ -110,3 +110,5 @@ Tips from Hassan:
 - consider ML outcome using limited parameters
 
 4. Jan 26: ML models described, database renamed, Segment 1 complete
+
+5. Jan 30: Review progress, divide models to test, assign presenter, and start slide deck
