@@ -6,6 +6,16 @@ presentation date: February 8th, 2023
 #### INSTRUCTOR: Hassan Ahmad
 #### ASSISTANT INSTRUCTOR: Ankush Malhotra
 
+<<<<<<< HEAD
+=======
+
+#### DUE DATES:
+Segment 1: Wed, Jan 25th
+Segment 2: Wed, Feb 1st
+Segment 3: Wed, Feb 8th
+
+
+>>>>>>> 0a68a571639d38edf00cc84fa81c60a566b4b733
 ## GROUP 5:
 - Josette Bitanga
 - Crystina Dang
@@ -50,6 +60,9 @@ We are interested in exploring the influence of the various social, mental, work
 - An [initial sketch of the dashboard](dashboard/Dashboard_MockUp_ROUGH.pptx) is available to be viewed.
 - An imbalance has been noted in the output data. A resampling technique might need to be selected.
 - The output selected (Work/Life Balance Score) is entirely numerical. Therefore, it will be scaled and bucketed. Encoding will not be required.
+
+#### DASHBOARD
+[Link to dashboard](https://public.tableau.com/views/WellbeingandHappiness/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 #### Potential ML models:
 1. Logistic Regression
