@@ -52,7 +52,7 @@ We are interested in exploring the influence of the various social, mental, work
 - The output selected (Work/Life Balance Score) is entirely numerical. Therefore, it will be scaled and bucketed. Encoding will not be required.
 
 #### DASHBOARD
-[Link to dashboard](https://public.tableau.com/views/WellbeingandHappiness/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+[Link to dashboard](https://public.tableau.com/app/profile/henrietta.danso/viz/WellbeingandHappiness/FinalDashboard)
 
 #### Potential ML models:
 1. Logistic Regression - incomplete
