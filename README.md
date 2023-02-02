@@ -24,7 +24,7 @@ Segment 3: Wed, Feb 8th
 ### THEME: Human Behaviour
 ### TOPIC: Work Life Balance
 #### QUESTION: Can the Work Life Balance score be predicted using a reduced number of questions?
-### DATASET: Lifestyle_and_wellbeing_data_Kaggle.csv - [Dataset](Data/Lifestyle_and_wellbeing_data_Kaggle.csv)
+### DATASET: Lifestyle_and_wellbeing_data_Kaggle.csv - [Dataset](data/staging_table.csv)
 #### DESCRIPTION: 
 Provided from [Kaggle](https://www.kaggle.com/datasets/ydalat/lifestyle-and-wellbeing-data):
 This dataset contains the survey responses from www.Authentic-Happiness.com.
@@ -66,14 +66,18 @@ We are interested in exploring the influence of the various social, mental, work
 - Fit the model
 - Find the accuracy and print the confusion matrix
 
-2. Random Forest Classifier
+2. Balanced Random Forest Classifier
 - Find the top features/inputs
+- Performed really well
 
 3. Decision Tree
 - Find the accuracy and print the confusion matrix
+- 
 
 4. XGBoost
 - Find the accuracy and print the confusion matrix
+- Did not perform well
+- 
 
 
 #### PROJECT STATUS: on track
