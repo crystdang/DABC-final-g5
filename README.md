@@ -6,11 +6,6 @@ presentation date: February 8th, 2023
 #### INSTRUCTOR: Hassan Ahmad
 #### ASSISTANT INSTRUCTOR: Ankush Malhotra
 
-#### DUE DATES:
-Segment 1: Wed, Jan 25th
-Segment 2: Wed, Feb 1st
-Segment 3: Wed, Feb 8th
-
 ## GROUP 5:
 - Josette Bitanga
 - Crystina Dang
@@ -22,7 +17,7 @@ Segment 3: Wed, Feb 8th
 ### THEME: Human Behaviour
 ### TOPIC: Work Life Balance
 #### QUESTION: Can the Work Life Balance score be predicted using a reduced number of questions?
-### DATASET: Lifestyle_and_wellbeing_data_Kaggle.csv - [Dataset](data/Lifestyle_and_wellbeing_data_Kaggle.csv)
+### DATASET: Lifestyle_and_wellbeing_data_Kaggle.csv - [Dataset](data/staging_table.csv)
 #### DESCRIPTION: 
 Provided from [Kaggle](https://www.kaggle.com/datasets/ydalat/lifestyle-and-wellbeing-data):
 This dataset contains the survey responses from www.Authentic-Happiness.com.
@@ -67,8 +62,9 @@ We are interested in exploring the influence of the various social, mental, work
 - Fit the model
 - Find the accuracy and print the confusion matrix
 
-2. Random Forest Classifier - [Output_BRF_Boost.ipynb](notebooks/Output_BRF_Boost.ipynb)
+2. Balanced Random Forest Classifier - [Output_BRF_Boost.ipynb](notebooks/Output_BRF_Boost.ipynb)
 - Find the top features/inputs
+- Performed really well
 
 Random forest algorithms are beneficial because they:
 
@@ -89,9 +85,12 @@ FINDINGS:
 
 3. Decision Tree - [Output_decisionTree.ipynb](notebooks/Output_decisionTree.ipynb), incomplete
 - Find the accuracy and print the confusion matrix
+- 
 
 4. XGBoost - - [Output_BRF_Boost.ipynb](notebooks/Output_BRF_Boost.ipynb), incomplete
 - Find the accuracy and print the confusion matrix
+- Did not perform well
+- 
 
 
 FINDINGS:
