@@ -6,16 +6,11 @@ presentation date: February 8th, 2023
 #### INSTRUCTOR: Hassan Ahmad
 #### ASSISTANT INSTRUCTOR: Ankush Malhotra
 
-<<<<<<< HEAD
-=======
-
 #### DUE DATES:
 Segment 1: Wed, Jan 25th
 Segment 2: Wed, Feb 1st
 Segment 3: Wed, Feb 8th
 
-
->>>>>>> 0a68a571639d38edf00cc84fa81c60a566b4b733
 ## GROUP 5:
 - Josette Bitanga
 - Crystina Dang
@@ -65,31 +60,42 @@ We are interested in exploring the influence of the various social, mental, work
 [Link to dashboard](https://public.tableau.com/views/WellbeingandHappiness/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 #### Potential ML models:
-1. Logistic Regression
+1. Logistic Regression - incomplete
 - Inputs: Focus Time and Live_Vision
 - Output, Work/Life Balance score
 - Train the data
 - Fit the model
 - Find the accuracy and print the confusion matrix
 
-2. Random Forest Classifier
+2. Random Forest Classifier - [Output_BRF_Boost.ipynb](notebooks/Output_BRF_Boost.ipynb)
 - Find the top features/inputs
 
 Random forest algorithms are beneficial because they:
 
-Are robust against overfitting as all of those weak learners are trained on different pieces of the data.
-Can be used to rank the importance of input variables in a natural way.
-Can handle thousands of input variables without variable deletion.
-Are robust to outliers and nonlinear data.
-Run efficiently on large datasets.
+- Are robust against overfitting as all of those weak learners are trained on different pieces of the data.
+- Can be used to rank the importance of input variables in a natural way.
+- Can handle thousands of input variables without variable deletion.
+- Are robust to outliers and nonlinear data.
+- Run efficiently on large datasets.
 
 
-3. Decision Tree
+FINDINGS: 
+- Using full set: accuracy score of 94% - considering this is for a low-risk outcome, it is a high percentage, f1 92%
+- 7 of 19 features removed according to feature importance: accuracy score of 90%, not a significant reduction, f1 89%
+- 11 of 19 features removed according to feature importance: accuracy score of 86%, f1 86%
+- All features except flow and live_vision removed according to high variance and low mean: accuracy score of 75%, still quite high for 2 of 19, f1 73%
+- All features except supporting_others and achievements removed according to top feature importance: accuracy score of 76%, f1 74%
+
+
+3. Decision Tree - [Output_decisionTree.ipynb](notebooks/Output_decisionTree.ipynb), incomplete
 - Find the accuracy and print the confusion matrix
 
-4. XGBoost
+4. XGBoost - - [Output_BRF_Boost.ipynb](notebooks/Output_BRF_Boost.ipynb), incomplete
 - Find the accuracy and print the confusion matrix
 
+
+FINDINGS:
+- Using full set: accuracy 71%, f1 81%, feature importance shows that over half of the dataset was omitted in this assumption - more testing necessary
 
 #### PROJECT STATUS: on track
 
@@ -97,11 +103,6 @@ Run efficiently on large datasets.
 - null hypothesis
 - alternative hypothesis
 - presentation
-
-#### CHALLENGES:
-
-#### FUTURE WORK:
-Segment 2
 
 #### MEETING DATES, README UPDATE AT START AND END:
 1. Jan 16: Topic and dataset decided, as well as back up dataset, all team members to create 3 questions and preprocess data, RDS and S3 bucket created
@@ -125,3 +126,5 @@ Tips from Hassan:
 4. Jan 26: ML models described, database renamed, Segment 1 complete
 
 5. Jan 30: Review progress, divide models to test, assign presenter, and start slide deck
+
+6. Feb 1: Continuation of model testing and presentation refinement
