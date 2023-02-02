@@ -6,16 +6,12 @@ presentation date: February 8th, 2023
 #### INSTRUCTOR: Hassan Ahmad
 #### ASSISTANT INSTRUCTOR: Ankush Malhotra
 
-<<<<<<< HEAD
-=======
 
 #### DUE DATES:
 Segment 1: Wed, Jan 25th
 Segment 2: Wed, Feb 1st
 Segment 3: Wed, Feb 8th
 
-
->>>>>>> 0a68a571639d38edf00cc84fa81c60a566b4b733
 ## GROUP 5:
 - Josette Bitanga
 - Crystina Dang
@@ -27,7 +23,7 @@ Segment 3: Wed, Feb 8th
 ### THEME: Human Behaviour
 ### TOPIC: Work Life Balance
 #### QUESTION: Can the Work Life Balance score be predicted using a reduced number of questions?
-### DATASET: Lifestyle_and_wellbeing_data_Kaggle.csv - [Dataset](data/Lifestyle_and_wellbeing_data_Kaggle.csv)
+### DATASET: Lifestyle_and_wellbeing_data_Kaggle.csv - [Dataset](data/staging_table.csv)
 #### DESCRIPTION: 
 Provided from [Kaggle](https://www.kaggle.com/datasets/ydalat/lifestyle-and-wellbeing-data):
 This dataset contains the survey responses from www.Authentic-Happiness.com.
@@ -72,8 +68,9 @@ We are interested in exploring the influence of the various social, mental, work
 - Fit the model
 - Find the accuracy and print the confusion matrix
 
-2. Random Forest Classifier
+2. Balanced Random Forest Classifier
 - Find the top features/inputs
+- Performed really well
 
 Random forest algorithms are beneficial because they:
 
@@ -86,9 +83,12 @@ Run efficiently on large datasets.
 
 3. Decision Tree
 - Find the accuracy and print the confusion matrix
+- 
 
 4. XGBoost
 - Find the accuracy and print the confusion matrix
+- Did not perform well
+- 
 
 
 #### PROJECT STATUS: on track
