@@ -17,6 +17,8 @@ presentation date: February 8th, 2023
 ### THEME: Human Behaviour
 ### TOPIC: Work Life Balance
 #### QUESTION: Can the Work Life Balance score be predicted using a reduced number of questions?
+
+
 ### DATASET: Lifestyle_and_wellbeing_data_Kaggle.csv - [Dataset](data/staging_table.csv)
 #### DESCRIPTION: 
 Provided from [Kaggle](https://www.kaggle.com/datasets/ydalat/lifestyle-and-wellbeing-data):
@@ -50,6 +52,10 @@ We are interested in exploring the influence of the various social, mental, work
 - An [initial sketch of the dashboard](dashboard/Dashboard_MockUp_ROUGH.pptx) is available to be viewed.
 - An imbalance has been noted in the output data. A resampling technique might need to be selected.
 - The output selected (Work/Life Balance Score) is entirely numerical. Therefore, it will be scaled and bucketed. Encoding will not be required.
+
+
+#### FINAL PRESENATION:
+[Link to slide deck](slide_deck/final-project-presentation.pptx)
 
 #### DASHBOARD:
 [Link to dashboard](https://public.tableau.com/app/profile/henrietta.danso/viz/WellbeingandHappiness/FinalDashboard)
