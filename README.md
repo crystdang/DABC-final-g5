@@ -60,7 +60,10 @@ We are interested in exploring the influence of the various social, mental, work
 #### DASHBOARD:
 [Link to dashboard](https://public.tableau.com/app/profile/henrietta.danso/viz/WellbeingandHappiness/FinalDashboard)
 
-### MACHINE LEARNING MODELS:
+
+
+
+## MACHINE LEARNING MODELS:
 
 **Factors**:
 - Inputs: Flow and Live_Vision
