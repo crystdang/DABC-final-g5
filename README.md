@@ -6,13 +6,6 @@ presentation date: February 8th, 2023
 #### INSTRUCTOR: Hassan Ahmad
 #### ASSISTANT INSTRUCTOR: Ankush Malhotra
 
-
-#### DUE DATES:
-Segment 1: Wed, Jan 25th
-Segment 2: Wed, Feb 1st
-Segment 3: Wed, Feb 8th
-
-
 ## GROUP 5:
 - Josette Bitanga
 - Crystina Dang
@@ -24,7 +17,7 @@ Segment 3: Wed, Feb 8th
 ### THEME: Human Behaviour
 ### TOPIC: Work Life Balance
 #### QUESTION: Can the Work Life Balance score be predicted using a reduced number of questions?
-### DATASET: Lifestyle_and_wellbeing_data_Kaggle.csv - [Dataset](Data/Lifestyle_and_wellbeing_data_Kaggle.csv)
+### DATASET: Lifestyle_and_wellbeing_data_Kaggle.csv - [Dataset](data/staging_table.csv)
 #### DESCRIPTION: 
 Provided from [Kaggle](https://www.kaggle.com/datasets/ydalat/lifestyle-and-wellbeing-data):
 This dataset contains the survey responses from www.Authentic-Happiness.com.
@@ -50,8 +43,8 @@ We are interested in exploring the influence of the various social, mental, work
 - It was noted that most people taking the quiz were above 20 year old.
 - The gender column will be dropped as it is irrelevant to the output.
 - For the timestamp column, we removed the time and converted the date from string to date data type. This will be used to visualize the data over time, but will not be used for the machine learning model.
-- Visually investigating the potential relationships between the different features and the work/life balance score, Focus Time and Live_Vision seem to contribute the strongest. 
-- There were 15972 total respondents. Of the total, 3816 scored excellent (above 700) and 12155 scored 700 or below (for our purposes, will be categorized as "Needs improvement").
+- Visually investigating the potential relationships between the different features and the work/life balance score, Flow and Live_Vision seem to contribute the strongest. 
+- There were 15971 total respondents. Of the total, 3786 scored excellent (above 700) and 12185 scored 700 or below (for our purposes, will be categorized as "needs_improvement").
 - Data exploration was completed on Google Colaboratory using Pyspark, [ETL.ipynb](notebooks/ETL.ipynb), and data was uploaded to a database on AWS and Postgres.
 - The initial raw data inserted into a database on Postgres can be found in [staging_table.csv](data/staging_table.csv) called "STG_WL". The cleansed data can be found in [transformed_table.csv](data/transformed_table.csv) called "TRF_WL".
 - An [initial sketch of the dashboard](dashboard/Dashboard_MockUp_ROUGH.pptx) is available to be viewed.
@@ -59,25 +52,49 @@ We are interested in exploring the influence of the various social, mental, work
 - The output selected (Work/Life Balance Score) is entirely numerical. Therefore, it will be scaled and bucketed. Encoding will not be required.
 
 #### DASHBOARD
-[Link to dashboard](https://public.tableau.com/views/WellbeingandHappiness/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+[Link to dashboard](https://public.tableau.com/app/profile/henrietta.danso/viz/WellbeingandHappiness/FinalDashboard)
 
 #### Potential ML models:
-1. Logistic Regression
+1. Logistic Regression - incomplete
 - Inputs: Focus Time and Live_Vision
 - Output, Work/Life Balance score
 - Train the data
 - Fit the model
 - Find the accuracy and print the confusion matrix
 
-2. Random Forest Classifier
+2. Balanced Random Forest Classifier - [Output_BRF_Boost.ipynb](notebooks/Output_BRF_Boost.ipynb)
 - Find the top features/inputs
+- Performed really well
 
-3. Decision Tree
+Random forest algorithms are beneficial because they:
+
+- Are robust against overfitting as all of those weak learners are trained on different pieces of the data.
+- Can be used to rank the importance of input variables in a natural way.
+- Can handle thousands of input variables without variable deletion.
+- Are robust to outliers and nonlinear data.
+- Run efficiently on large datasets.
+
+
+FINDINGS: 
+- Using full set: accuracy score of 94% - considering this is for a low-risk outcome, it is a high percentage, f1 92%
+- 7 of 19 features removed according to feature importance: accuracy score of 90%, not a significant reduction, f1 89%
+- 11 of 19 features removed according to feature importance: accuracy score of 86%, f1 86%
+- All features except flow and live_vision removed according to high variance and low mean: accuracy score of 75%, still quite high for 2 of 19, f1 73%
+- All features except supporting_others and achievements removed according to top feature importance: accuracy score of 76%, f1 74%
+
+
+3. Decision Tree - [Output_decisionTree.ipynb](notebooks/Output_decisionTree.ipynb), incomplete
 - Find the accuracy and print the confusion matrix
+- 
 
-4. XGBoost
+4. XGBoost - - [Output_BRF_Boost.ipynb](notebooks/Output_BRF_Boost.ipynb), incomplete
 - Find the accuracy and print the confusion matrix
+- Did not perform well
+- 
 
+
+FINDINGS:
+- Using full set: accuracy 71%, f1 81%, feature importance shows that over half of the dataset was omitted in this assumption - more testing necessary
 
 #### PROJECT STATUS: on track
 
@@ -86,17 +103,9 @@ We are interested in exploring the influence of the various social, mental, work
 - alternative hypothesis
 - presentation
 
-#### CHALLENGES:
-
-#### FUTURE WORK:
-Segment 2
-
-
-![wellbeing_lifestyle_erd](https://user-images.githubusercontent.com/108503112/214723873-f517e70c-5d71-469d-83a3-6670dcfbc621.png)
-
-
 #### MEETING DATES, README UPDATE AT START AND END:
 1. Jan 16: Topic and dataset decided, as well as back up dataset, all team members to create 3 questions and preprocess data, RDS and S3 bucket created
+
 Tips from Ankush:
 - Use AWS to create Cloud
 - think of what machine learning model would be best
@@ -114,3 +123,7 @@ Tips from Hassan:
 - consider ML outcome using limited parameters
 
 4. Jan 26: ML models described, database renamed, Segment 1 complete
+
+5. Jan 30: Review progress, divide models to test, assign presenter, and start slide deck
+
+6. Feb 1: Continuation of model testing and presentation refinement
