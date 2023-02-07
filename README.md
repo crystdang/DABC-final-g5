@@ -54,13 +54,13 @@ We are interested in exploring the influence of the various social, mental, work
 - The output selected (Work/Life Balance Score) is entirely numerical. Therefore, it will be scaled and bucketed. Encoding will not be required.
 
 
-#### FINAL PRESENATION:
+### FINAL PRESENATION:
 [Link to slide deck](slide_deck/final-project-presentation.pptx)
 
 #### DASHBOARD:
 [Link to dashboard](https://public.tableau.com/app/profile/henrietta.danso/viz/WellbeingandHappiness/FinalDashboard)
 
-#### MACHINE LEARNING MODELS:
+### MACHINE LEARNING MODELS:
 
 **Factors**:
 - Inputs: Flow and Live_Vision
@@ -123,7 +123,7 @@ Logistic Regression provided the best outcome with minimal inputs without top fe
 
 
 
-#### MEETING DATES, README UPDATE AT START AND END:
+## MEETING DATES, README UPDATE AT START AND END:
 1. Jan 16: Topic and dataset decided, as well as back up dataset, all team members to create 3 questions and preprocess data, RDS and S3 bucket created
 
 Tips from Ankush:
