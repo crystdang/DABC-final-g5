@@ -66,6 +66,9 @@ We are interested in exploring the influence of the various social, mental, work
 - Inputs: Flow and Live_Vision
 - Output: Work/Life Balance score
 - Classification, binary output, higher precision
+- 4 models chosen for testing: Logistic Regression, Balanced Random Forest Classifer, Decision Tree, XGBoost 
+
+
 
 1. **Logistic Regression** - [Output_LogisticRegression.ipynb](notebooks/Output_LogisticRegression.ipynb)
 
@@ -73,6 +76,9 @@ FINDINGS:
 - FULL SET: accuracy score of 95%, precision avg 93%
 - Not feature importance compatiable
 - Only flow and live_vision according to high variance and low mean: accuracy score of 80%, precision avg 74%
+
+
+
 
 
 2. **Balanced Random Forest Classifier** - [Output_BRF_Boost.ipynb](notebooks/Output_BRF_Boost.ipynb)
@@ -85,12 +91,18 @@ FINDINGS:
 - Only supporting_others and achievements according to top feature importance: accuracy score of 76%, precision avg 82%
 
 
+
+
+
 3. **Decision Tree** - [Output_decisionTree.ipynb](notebooks/Output_decisionTree.ipynb)
 
 FINDINGS:
 - FULL SET: accuracy score of 86%, precision avg 87%
 - Not feature importance compatiable
 - Only flow and live_vision to high variance and low mean: accuracy score of 80%, precision avg 78%
+
+
+
 
 4. **XGBoost** - [Output_BRF_Boost.ipynb](notebooks/Output_BRF_Boost.ipynb)
 
@@ -101,6 +113,9 @@ FINDINGS:
 - 11 of 19 features removed according to feature importance: accuracy score of 82%, precision avg 88%
 - Only flow and live_vision according to high variance and low mean: accuracy score of 62%, precision avg 77%
 - Only supporting_others and sufficient_income according to top feature importance: accuracy score of 70%, precision avg 79%
+
+
+
 
 ### MODEL SUMMARY:
 Logistic Regression provided the best outcome with minimal inputs without top features provided, with further investigation, there is a chance a better pairing could be discovered
