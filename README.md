@@ -17,6 +17,8 @@ presentation date: February 8th, 2023
 ### THEME: Human Behaviour
 ### TOPIC: Work Life Balance
 #### QUESTION: Can the Work Life Balance score be predicted using a reduced number of questions?
+
+
 ### DATASET: Lifestyle_and_wellbeing_data_Kaggle.csv - [Dataset](data/staging_table.csv)
 #### DESCRIPTION: 
 Provided from [Kaggle](https://www.kaggle.com/datasets/ydalat/lifestyle-and-wellbeing-data):
@@ -51,59 +53,80 @@ We are interested in exploring the influence of the various social, mental, work
 - An imbalance has been noted in the output data. A resampling technique might need to be selected.
 - The output selected (Work/Life Balance Score) is entirely numerical. Therefore, it will be scaled and bucketed. Encoding will not be required.
 
-#### DASHBOARD
+
+### FINAL PRESENATION:
+[Link to slide deck](slide_deck/final-project-presentation.pptx)
+
+#### DASHBOARD:
 [Link to dashboard](https://public.tableau.com/app/profile/henrietta.danso/viz/WellbeingandHappiness/FinalDashboard)
 
-#### Potential ML models:
-1. Logistic Regression - incomplete
-- Inputs: Focus Time and Live_Vision
-- Output, Work/Life Balance score
-- Train the data
-- Fit the model
-- Find the accuracy and print the confusion matrix
 
-2. Balanced Random Forest Classifier - [Output_BRF_Boost.ipynb](notebooks/Output_BRF_Boost.ipynb)
-- Find the top features/inputs
-- Performed really well
 
-Random forest algorithms are beneficial because they:
 
-- Are robust against overfitting as all of those weak learners are trained on different pieces of the data.
-- Can be used to rank the importance of input variables in a natural way.
-- Can handle thousands of input variables without variable deletion.
-- Are robust to outliers and nonlinear data.
-- Run efficiently on large datasets.
+## MACHINE LEARNING MODELS:
 
+**Factors**:
+- Inputs: Flow and Live_Vision
+- Output: Work/Life Balance score
+- Classification, binary output, higher precision
+- 4 models chosen for testing: Logistic Regression, Balanced Random Forest Classifer, Decision Tree, XGBoost 
+
+
+
+1. **Logistic Regression** - [Output_LogisticRegression.ipynb](notebooks/Output_LogisticRegression.ipynb)
+
+FINDINGS:
+- FULL SET: accuracy score of 95%, precision avg 93%
+- Not feature importance compatiable
+- Only flow and live_vision according to high variance and low mean: accuracy score of 80%, precision avg 74%
+
+
+
+
+
+2. **Balanced Random Forest Classifier** - [Output_BRF_Boost.ipynb](notebooks/Output_BRF_Boost.ipynb)
 
 FINDINGS: 
-- Using full set: accuracy score of 94% - considering this is for a low-risk outcome, it is a high percentage, f1 92%
-- 7 of 19 features removed according to feature importance: accuracy score of 90%, not a significant reduction, f1 89%
-- 11 of 19 features removed according to feature importance: accuracy score of 86%, f1 86%
-- All features except flow and live_vision removed according to high variance and low mean: accuracy score of 75%, still quite high for 2 of 19, f1 73%
-- All features except supporting_others and achievements removed according to top feature importance: accuracy score of 76%, f1 74%
+- FULL SET: accuracy score of 94% - considering this is for a low-risk outcome, it is a high percentage, precision avg 94%
+- 7 of 19 features removed according to feature importance: accuracy score of 90%, not a significant reduction, precision avg 91%
+- 11 of 19 features removed according to feature importance: accuracy score of 86%, precision avg 88%
+- Only flow and live_vision according to high variance and low mean: accuracy score of 73%, still quite high for 2 of 19, precision avg 79%
+- Only supporting_others and achievements according to top feature importance: accuracy score of 76%, precision avg 82%
 
 
-3. Decision Tree - [Output_decisionTree.ipynb](notebooks/Output_decisionTree.ipynb), incomplete
-- Find the accuracy and print the confusion matrix
-- 
 
-4. XGBoost - - [Output_BRF_Boost.ipynb](notebooks/Output_BRF_Boost.ipynb), incomplete
-- Find the accuracy and print the confusion matrix
-- Did not perform well
-- 
+
+
+3. **Decision Tree** - [Output_decisionTree.ipynb](notebooks/Output_decisionTree.ipynb)
+
+FINDINGS:
+- FULL SET: accuracy score of 86%, precision avg 87%
+- Not feature importance compatiable
+- Only flow and live_vision to high variance and low mean: accuracy score of 80%, precision avg 78%
+
+
+
+
+4. **XGBoost** - [Output_BRF_Boost.ipynb](notebooks/Output_BRF_Boost.ipynb)
 
 
 FINDINGS:
-- Using full set: accuracy 71%, f1 81%, feature importance shows that over half of the dataset was omitted in this assumption - more testing necessary
+- FULL SET: accuracy 91%, precision avg 94%
+- 7 of 19 features removed according to feature importance: accuracy score of 87%, not a significant reduction, precision avg 91%
+- 11 of 19 features removed according to feature importance: accuracy score of 82%, precision avg 88%
+- Only flow and live_vision according to high variance and low mean: accuracy score of 62%, precision avg 77%
+- Only supporting_others and sufficient_income according to top feature importance: accuracy score of 70%, precision avg 79%
 
-#### PROJECT STATUS: on track
 
-#### NEEDS:
-- null hypothesis
-- alternative hypothesis
-- presentation
 
-#### MEETING DATES, README UPDATE AT START AND END:
+
+### MODEL SUMMARY:
+Logistic Regression provided the best outcome with minimal inputs without top features provided, with further investigation, there is a chance a better pairing could be discovered
+
+
+
+
+## MEETING DATES, README UPDATE AT START AND END:
 1. Jan 16: Topic and dataset decided, as well as back up dataset, all team members to create 3 questions and preprocess data, RDS and S3 bucket created
 
 Tips from Ankush:
@@ -127,3 +150,5 @@ Tips from Hassan:
 5. Jan 30: Review progress, divide models to test, assign presenter, and start slide deck
 
 6. Feb 1: Continuation of model testing and presentation refinement
+
+7. Feb 6: Model testing complete, file clean up and presentation refinement
