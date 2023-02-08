@@ -140,6 +140,7 @@ Tips from Ankush:
 2. Jan 18: Main question selected, database created and shared, binning columns as group, divided deliverables
 
 3. Jan 23: Main question revised, ERD reduced to original table, further data exploration
+
 Tips from Hassan:
 - consider what variable most affects the final score
 - reduce tables
