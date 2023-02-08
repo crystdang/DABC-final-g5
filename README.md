@@ -77,7 +77,7 @@ We are interested in exploring the influence of the various social, mental, work
 
 FINDINGS:
 - FULL SET: accuracy score of 95%, precision avg 93%
-- Not feature importance compatiable
+- Not feature importance compatible
 - Only flow and live_vision according to high variance and low mean: accuracy score of 80%, precision avg 74%
 
 
@@ -101,7 +101,7 @@ FINDINGS:
 
 FINDINGS:
 - FULL SET: accuracy score of 86%, precision avg 87%
-- Not feature importance compatiable
+- Not feature importance compatible
 - Only flow and live_vision to high variance and low mean: accuracy score of 80%, precision avg 78%
 
 
