@@ -53,6 +53,15 @@ We are interested in exploring the influence of the various social, mental, work
 - An imbalance has been noted in the output data. A resampling technique might need to be selected.
 - The output selected (Work/Life Balance Score) is entirely numerical. Therefore, it will be scaled and bucketed. Encoding will not be required.
 
+### TECHNOLOGIES & LANGUAGE USED:
+1. AWS
+2. PostGres
+3. Google Colaboratory
+4. PySpark
+5. Python
+6. Tableau
+
+
 
 ### FINAL PRESENATION:
 [Link to slide deck](slide_deck/final-project-presentation.pptx)
@@ -68,7 +77,7 @@ We are interested in exploring the influence of the various social, mental, work
 **Factors**:
 - Inputs: Flow and Live_Vision
 - Output: Work/Life Balance score
-- Classification, binary output, higher precision
+- Supervised, classification, binary output, and higher precision
 - 4 models chosen for testing: Logistic Regression, Balanced Random Forest Classifer, Decision Tree, XGBoost 
 
 
@@ -121,7 +130,7 @@ FINDINGS:
 
 
 ### MODEL SUMMARY:
-Logistic Regression provided the best outcome with minimal inputs without top features provided, with further investigation, there is a chance a better pairing could be discovered
+Logistic Regression provided the best outcome with minimal inputs without top features provided, with further investigation, there is a chance a better pair could be discovered
 
 
 
@@ -150,6 +159,6 @@ Tips from Hassan:
 
 5. Jan 30: Review progress, divide models to test, assign presenter, and start slide deck
 
-6. Feb 1: Continuation of model testing and presentation refinement
+6. Feb 1: Continuation of model testing and presentation refinement, Segment 2 complete
 
 7. Feb 6: Model testing complete, file clean up and presentation refinement
